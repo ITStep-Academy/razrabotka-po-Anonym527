@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<locale.h>
+int main() {
+
+    setlocale(LC_ALL, "russian");
+    int z;
+
+    printf("\n введите целое число");
+    scanf_s("%d", &z);
+
+    z /= 10;
+    z %= 10;
+
+    printf("¬ведите третью цифру от целого числа   - %d", z);
+
+
+    return 0;
+
+
+}
+
+
+
+
+
+
+
+
+
+
