@@ -1,0 +1,33 @@
+
+3-задание
+
+
+#include<stdio.h>
+#include<locale.h>
+int main() {
+	int hours, minutes, seconds, sech, secm, hmin;
+	
+	printf("\nВведите время через пробелы (пример - 15 07 36):\n");
+
+	
+	
+	scanf_s("%d%d%d", &hours, &minutes, &seconds);
+
+	hours *= sech;
+	minutes *= secm;
+
+	seconds += hours + minutes;
+
+	printf("Вот введённое вами время в секундах - %d", seconds);
+	printf("\nВведите время через пробелы (пример - 15 07 36):\n");
+	scanf_s("%d%d%d", &hours, &minutes, &seconds);
+
+	hours *= sech;
+	minutes *= hmin;
+
+	seconds += hours + minutes;
+
+	printf("введённое вами время в секундах - %d", seconds);
+
+}
+
