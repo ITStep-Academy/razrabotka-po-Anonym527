@@ -28,3 +28,59 @@ int main() {
 
 
 
+
+
+
+
+2)#include<stdio.h>
+#include<locale.h>
+int main() {
+
+    setlocale(LC_ALL, "russian");
+    int num1;
+    double othern;
+    double fp;
+
+
+    printf("\n input a floating-point number:");
+    scanf_s("%lf", &othern);
+
+    num1 = (int) othern;
+    fp = othern - num1;
+
+    printf("original number : %.2lf\n", othern);
+    printf("integral part:%d\n", num1);
+   
+    printf("fractional part: %.2lf\n", fp);
+
+    
+
+
+    return 0;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
