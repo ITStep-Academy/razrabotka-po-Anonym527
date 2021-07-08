@@ -1,0 +1,42 @@
+
+3-задание
+
+
+#include<stdio.h>
+#include<locale.h>
+int main() {
+
+	setlocale(LC_ALL,"russian");
+	int hours, minutes, seconds, sech, secm, hmin;
+	sech = 3600;
+	secm = 60;
+	
+	printf("\nВведите время через пробелы (пример - 15 07 36):\n");
+
+	sech = 3600;  
+	
+	secm = 60;
+	
+	scanf_s("%d", &hours, &minutes, &seconds);
+
+	hours *= sech;
+	minutes *= secm;
+
+	seconds += hours + minutes;
+
+	printf("Вот введённое вами время в секундах - %d", seconds);
+	printf("\nВведите время через пробелы (пример - 15 07 36):\n");
+	scanf_s("%d", &seconds);
+
+	hours = seconds / sech;
+	
+	minutes = seconds / secm % sech ;
+
+	seconds = seconds % 60;
+
+	seconds += hours + minutes;
+
+	printf("введённое вами время в секундах - %d", seconds);
+
+}
+

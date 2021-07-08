@@ -1,0 +1,86 @@
+#include<stdio.h>
+#include<locale.h>
+int main() {
+
+    setlocale(LC_ALL, "russian");
+    int z;
+
+    printf("\n введите целое число");
+    scanf_s("%d", &z);
+
+    z /= 10;
+    z %= 10;
+
+    printf("¬ведите третью цифру от целого числа   - %d", z);
+
+
+    return 0;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2)#include<stdio.h>
+#include<locale.h>
+int main() {
+
+    setlocale(LC_ALL, "russian");
+    int num1;
+    double othern;
+    double fp;
+
+
+    printf("\n input a floating-point number:");
+    scanf_s("%lf", &othern);
+
+    num1 = (int) othern;
+    fp = othern - num1;
+
+    printf("original number : %.2lf\n", othern);
+    printf("integral part:%d\n", num1);
+   
+    printf("fractional part: %.2lf\n", fp);
+
+    
+
+
+    return 0;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
